@@ -1,0 +1,249 @@
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    font-weight: 400;
+}
+:root{
+    --white:#fff;
+    --blue-1: #1d8dd8;
+    --blue-2: #023047;
+    --box-shadow-1: 0px 0px 20px #219cbb30;
+}
+p{
+    margin: 0;
+    font-size: 18px;
+}
+b{
+    font-weight: 600;
+}
+body{
+    background-color: #f0f0f0;
+    margin: 0;
+}
+h1{
+    font-family: 'poppins';
+    font-weight: 500;
+    padding: unset;
+    margin: unset;
+    color: var(--blue-2);
+}
+h2,h3,h4{
+    font-family: 'poppins';
+    font-weight: 500;
+    padding: unset;
+    margin: unset;
+}
+.main-menu{
+    color: white;
+}
+.main-menu li{
+    text-decoration: none;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+.main-menu li:hover{
+    text-decoration: underline;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.full-width{
+    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+}
+.inner-1{
+    width: fit-content;
+}
+.pd-0{
+    padding:0rem
+}
+.pd-1{
+    padding:1rem
+}
+.txt-center{
+    text-align: center;
+}
+.logo-fig img{
+    height: 4rem;
+}
+.main-menu{
+    justify-content: space-between;
+}
+.main-menu li{
+    padding-left: 1rem;
+}
+header{
+    background-color: var(--blue-2);
+}
+figure{
+    margin: 0;
+}
+.full-in{
+    max-width: 1400px;
+    margin: auto;
+}
+.weather-section{
+    min-height:300px ;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.inner-wrapper-1col{
+    padding: 1rem;
+    width: 100%;
+}
+.submit-1{
+    height: 2rem;
+}
+.form-1-div-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-search-h1{
+    font-size: 60px;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.inner-1{
+    margin: auto;
+    display: flex;
+}
+.inner-2{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+.inner-3{
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+    color: var(--blue-2);
+}
+.inner-3 div{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.details-1{
+    text-align: center;
+}
+.submit-1{
+    color: var(--white);
+    border: none;
+    background-color: var(--blue-2);
+    padding: 0 1rem;
+    text-shadow: 1px 1px 2px var(--blue-2);
+    cursor: pointer;
+}
+.submit-1:hover{
+    color: var(--white);
+    border: none;
+    background-color: var(--blue-1);
+    padding: 0 1rem;
+    text-shadow: 1px 1px 2px var(--blue-2);
+    cursor: pointer;
+}
+input{
+    height: 2rem;
+    border: 1px solid rgb(0,0,0,1);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.info-wrap{
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+}
+.info-inner-wrap{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.info-inner-wrap b{
+    color: var(--blue-2);
+}
+.info-inner-wrap p{
+    font-size: 20px;
+}
+.info-summary{
+    background-color: var(--blue-2);
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+}
+/*desktop*/
+@media screen and (min-width:800px) {
+    .weather-section{
+        flex-direction: row;
+    }
+    .inner-wrapper-2col{
+        width: 50%;
+    }
+    .sec1img-size{
+        max-height: 300px;
+    }
+    .search-input{
+        height: 2rem;
+        width: 40vw;
+        margin: auto;
+    }
+    .submit-1{
+        padding: 0 1rem;
+        margin: 0 0.5rem;
+        border-radius: 10px ;
+    }
+    .info-inner-wrap{
+        flex-direction: row;
+    }
+    .info-inner-wrap div{
+        width: 50%;
+    }
+}
+@media screen and (max-width:800px) {
+    .weather-section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .inner-wrapper-2col{
+        width: 100%;
+    }
+    .sec1img-size{
+        padding-top:2rem;
+        max-width: 100%;
+    }
+    .search-input{
+        height: 2rem;
+        width: 60vw;
+        margin: auto;
+    }
+    .big-search-h1{
+        font-size: 40px;
+        line-height: 1;
+    }
+    .inner-1{
+        flex-direction: column;
+    }
+    .submit-1{
+        width: 30vw;
+        margin: 0.5rem auto 0 auto;
+    }
+    .info-inner-wrap{
+        flex-direction: column;
+    }
+    .info-inner-wrap div{
+        width: 100%;
+        
+    }
+}
+
